@@ -6,7 +6,7 @@ STUDENT-LOGIN</TITLE>
 body{
 background-image:url("home-imgs.jpg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
 
 /* Add a black background color to the top navigation */

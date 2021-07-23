@@ -6,7 +6,7 @@
 body{
 background-image:url("home-imgs.jpg");
 background-repeat:repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
 </style>
 </Head>

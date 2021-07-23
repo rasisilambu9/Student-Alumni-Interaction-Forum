@@ -26,7 +26,7 @@ button {
 body{
 background-image:url("home-imgs.jpg");
 background-repeat:no-repeat;
-background-size:1500px 800px;
+background-size:1800px 800px;
 } 
 .img1 img {
 	border: 5px solid black;
