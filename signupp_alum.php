@@ -93,7 +93,7 @@ $servername = "localhost";
 $username = "root";
 $password ="";
 $dbname="forum";
-$query1= "INSERT INTO `alum_det` ( `regno`,`name`,`company`,`dob`,`mail`, `phno`) VALUES ('$rollno','$name','$company','$dob','$mail','$phno')";
+$query1= "INSERT INTO `alum_det` ( `regno`,`name`,`company`,`dob`,`mail`, `phno`,`status`) VALUES ('$rollno','$name','$company','$dob','$mail','$phno','0')";
 $sel="Select `regno` from `alum_det`"; 
 // Create connection
 $conn = new mysqli($servername, $username, $password ,$dbname);
@@ -129,7 +129,7 @@ exit;
      </tr>
      </table>";
  echo"<br>"; echo"<br>"; echo"<br>";
-echo"<font color=black><b>New Alumni signed up successfully and and Waiting For Alumni Confirmationwith ID:\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\<font color=red>$rollno</font></b></font>";}
+echo"<font color=black><b>New Alumni signed up successfully and and Waiting For Alumni Confirmationwith ID:<font color=red>$rollno</font></b></font>";}
 	
 	
  

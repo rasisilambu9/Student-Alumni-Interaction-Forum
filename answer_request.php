@@ -10,6 +10,7 @@ background-size:1800px 800px;
 <title>request-answered</title>
 </head>
 <body>
+  
 <?php
 $answer=$_POST["answer"];
 $reqid=$_POST["reqid"];
@@ -28,8 +29,9 @@ $query1= "INSERT INTO `response` ( `responsed`,`reqid` ) VALUES ('$answer','$req
 mysqli_query($conn,$query1);
 $output=null;
 $retval=null;
-exec('python C:\Users\USER\.spyder-py3\mails.py studentalumniavcit@gmail.com', $output, $retval);
- 
+exec('python C:\mails.py studentalumniavcit@gmail.com', $output, $retval)
+
+
 ?>
 <font color=green size=4em>
 Thank You For your Response..!! <br> Your response Added successfully

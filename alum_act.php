@@ -28,13 +28,13 @@ $result=mysqli_query($conn,$query1);
 while($row=mysqli_fetch_array($result)){
 	 
  
- if( $uname==$row['regno'] and $passworda==($row['dob']))
+ if( $uname==$row['regno'] and $passworda==($row['dob']) and $row['status']!='0')
  {
  session_start();
   header("location:alum.php");
 }
 else{
-echo"Invalid Login Credentials";
+echo"Invalid Login Credentials or ID not Confirmed";
 echo"<br>";
 echo"<b><a href=index.html>Click Here </a> </b>to Home Page";
 }
